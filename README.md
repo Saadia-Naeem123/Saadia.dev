@@ -4,9 +4,9 @@ Turns the contact form on your portfolio into a real, working "send an email" fo
 
 ## What was added
 
-- `server.js` — a small Express server that serves `public/index.html` (your site, unchanged) and exposes `POST /api/contact`, which validates the submission and emails it to you via Nodemailer.
+- `server.js` — a small Express server that serves the root `index.html` (your site, unchanged) and exposes `POST /api/contact`, which validates the submission and emails it to you via Nodemailer.
 - Spam protection: rate limiting (5 messages / 15 min per IP) + a hidden honeypot field.
-- `public/index.html` — same page as before, except the contact form now does a real `fetch('/api/contact', ...)` on submit, shows a loading/success/error state, and clears itself on success.
+- `index.html` — same page as before, except the contact form now does a real `fetch('/api/contact', ...)` on submit, shows a loading/success/error state, and clears itself on success.
 
 ## 1. Install
 
