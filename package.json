@@ -1,0 +1,15 @@
+{
+  "name": "saadia-portfolio",
+  "version": "1.0.0",
+  "description": "Saadia Naeem's AI engineering portfolio — static site + Vercel serverless contact form (Nodemailer)",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.15"
+  }
+}
